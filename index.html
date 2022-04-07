@@ -389,10 +389,9 @@
             <b class="subscribe-call">ПОДПИШИТЕСЬ НА РАССЫЛКУ</b>
         <div class="subscribe-container">          
               
-            <label class="label-footer" >
+            <label for="mail-ftr">
                 E-mail 
-                <input class="field"
-            type="email" name="email" />                      
+                <input type="email" name="email" id="mail-ftr" />                      
             </label>
         </div>
        
@@ -418,39 +417,54 @@
                     <use href="./images/symbol-defs.svg#icon-close"></use>
                 </svg>
             </button>
+
+            <!--Форма модалки-->
              
             <form class="form-modal" action="">
                 <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
 
                
-                <label class="label-field">
-                    Имя
-                    <input type="text" name="username" autofocus>
-                <svg class="icon-modal-form" width="12px" height="12px">
-                    <use href="./images/symbol-defs.svg#icon-person-black"></use>
-                </svg>
-                </label>
-
+              <div class="form-field">
+                <label class="label-field" for="username">Имя</label>
+                
+              
+                    <input class="username" type="text" name="username" id="username" autofocus>
              
-                <label class="">
-                    Телефон
-                    <input type="tel" name="tel" autofocus >
-                </label>
+                <svg class="icon-modal-form" width="18px" height="18px">
+                    <use href="./images/symbol-defs.svg#icon-person-black"></use>
+                </svg>             
+              </div>
 
-                <label class="">
-                    Почта
-                    <input type="email" name="email" autofocus >
-                </label>
 
-                <label>
-                    Комментарий
-                    <textarea name="feedback" rows="5" placeholder="Оставьте ваш комментарий"></textarea>
+                <div class="form-field">
+                    <label class="label-field" for="telephone">Телефон</label>
+                <input type="tel" name="tel" id="telephone" autofocus >
+                <svg class="icon-modal-form" width="18px" height="18px">
+                    <use href="./images/symbol-defs.svg#icon-phone-black"></use>
+                </svg>  
+                </div>
+
+
+                <div class="form-field">
+                    <label class="label-field" for="mail">Почта</label>
+                <input type="email" name="email" id="mail" autofocus>
+                <svg class="icon-modal-form" width="18px" height="18px">
+                    <use href="./images/symbol-defs.svg#icon-email-black"></use>
+                </svg>  
+                </div>
+
+
+              <div class="form-field">
+                <label class="label-field" for="text">Комментарий</label>
+
+                <textarea class="comment" name="feedback" rows="5" id="text" placeholder="Оставьте ваш комментарий"></textarea>
+              </div>
+
+
+                  <label class="agree" for="agreement">
+                    <input type="checkbox" name="agree" value="agree" id="agreement" checked />Соглашаюсь с рассылкой и принимаю <a href="./index.html" class="link-form">Условия договора</a> 
                   </label>
-
-                  <label>
-                    <input type="checkbox" name="agree" value="agree" checked />
-                    Соглашаюсь с рассылкой и принимаю Условия договора 
-                  </label>
+                 
                   <button class="btn-send" type="submit">Отправить</button>
             </form>
         </div>
