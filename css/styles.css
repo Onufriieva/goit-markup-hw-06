@@ -1312,7 +1312,7 @@ margin-right: 8px;
 .checkbox:checked + .span-box {
     background-color: var(--button-link-color);
     
-    background-size: contain;
+    background-size: contain; 
     background-origin: border-box;
     border-color: var(--button-link-color);
    
