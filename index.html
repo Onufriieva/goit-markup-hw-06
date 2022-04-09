@@ -390,8 +390,8 @@
         <div class="subscribe-container">          
               
             <label for="mail-ftr">
-                E-mail 
-                <input type="email" name="email" id="mail-ftr" />                      
+                E-mail
+                <input class="mail" type="email" name="email" id="mail-ftr" />                      
             </label>
         </div>
        
@@ -413,7 +413,7 @@
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="btn-close" type="button" data-modal-close>
-                <svg class="close" width="30px" height="30px">
+                <svg class="close" width="11px" height="11px">
                     <use href="./images/symbol-defs.svg#icon-close"></use>
                 </svg>
             </button>
@@ -427,30 +427,40 @@
               <div class="form-field">
                 <label class="label-field" for="username">Имя</label>
                 
-              
-                    <input class="username" type="text" name="username" id="username" autofocus>
+              <div class="icon-box">
+                <input type="text" name="username" id="username" autofocus>
              
-                <svg class="icon-modal-form" width="18px" height="18px">
+                <svg class="icon-form" width="18px" height="18px">
                     <use href="./images/symbol-defs.svg#icon-person-black"></use>
-                </svg>             
+                </svg>     
+              </div>
+                      
               </div>
 
 
                 <div class="form-field">
                     <label class="label-field" for="telephone">Телефон</label>
-                <input type="tel" name="tel" id="telephone" autofocus >
-                <svg class="icon-modal-form" width="18px" height="18px">
-                    <use href="./images/symbol-defs.svg#icon-phone-black"></use>
-                </svg>  
+
+                    <div class="icon-box">
+                        <input type="tel" name="tel" id="telephone" autofocus >
+                        <svg class="icon-form" width="18px" height="18px">
+                            <use href="./images/symbol-defs.svg#icon-phone-black"></use>
+                        </svg>  
+                    </div>
+               
                 </div>
 
 
                 <div class="form-field">
                     <label class="label-field" for="mail">Почта</label>
-                <input type="email" name="email" id="mail" autofocus>
-                <svg class="icon-modal-form" width="18px" height="18px">
-                    <use href="./images/symbol-defs.svg#icon-email-black"></use>
-                </svg>  
+
+                    <div class="icon-box">
+                     <input type="email" name="email" id="mail" autofocus>
+                     <svg class="icon-form" width="18px" height="18px">
+                         <use href="./images/symbol-defs.svg#icon-email-black"></use>
+                     </svg> 
+                    </div>
+               
                 </div>
 
 
@@ -462,7 +472,17 @@
 
 
                   <label class="agree" for="agreement">
-                    <input type="checkbox" name="agree" value="agree" id="agreement" checked />Соглашаюсь с рассылкой и принимаю <a href="./index.html" class="link-form">Условия договора</a> 
+                   
+                   
+                    <input class="checkbox" type="checkbox" name="agree" value="agree" id="agreement" checked />
+                    <span class="span-box">
+
+                        <svg class="icon-checkbox" width="15px" height="15px">
+                            <use href="./images/symbol-defs.svg#icon-check"></use>
+                        </svg> 
+                      </span>
+                    Соглашаюсь с рассылкой и принимаю 
+                    <a href="./index.html" class="link-form">Условия договора</a> 
                   </label>
                  
                   <button class="btn-send" type="submit">Отправить</button>
