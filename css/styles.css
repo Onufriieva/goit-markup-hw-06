@@ -1179,6 +1179,8 @@ color: var(--title-font);
 
 .close {
     position: absolute;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-close:hover .close,
@@ -1259,6 +1261,8 @@ input[type="checkbox"] {
 margin-right: 8px;
 }
 
+
+
 .comment {
     padding: 12px 16px;
     margin: 0;
@@ -1288,6 +1292,7 @@ margin-right: 8px;
 
 .agree {
     display: flex;
+    justify-content: center;
     align-items: center;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -1339,6 +1344,8 @@ margin-right: 8px;
 
 
 .link-form {
+    display: inline-block;
+    margin-left: 5px;
     color: var(--button-link-color);
     line-height: 1.71;
     letter-spacing: 0.03em;

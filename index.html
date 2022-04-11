@@ -389,10 +389,9 @@
             <b class="subscribe-call">ПОДПИШИТЕСЬ НА РАССЫЛКУ</b>
         <div class="subscribe-container">          
               
-            <label for="mail-ftr">
-                E-mail
-                <input class="mail" type="email" name="email" id="mail-ftr" />                      
-            </label>
+                
+                <input class="mail" type="email" name="email" id="mail-ftr"  placeholder="E-mail"/>                      
+           
         </div>
        
             <button class="btn-submit" type="submit">Подписаться
@@ -428,7 +427,7 @@
                 <label class="label-field" for="username">Имя</label>
                 
               <div class="icon-box">
-                <input type="text" name="username" id="username" autofocus>
+                <input type="text" name="username" id="username">
              
                 <svg class="icon-form" width="18px" height="18px">
                     <use href="./images/symbol-defs.svg#icon-person-black"></use>
@@ -442,7 +441,7 @@
                     <label class="label-field" for="telephone">Телефон</label>
 
                     <div class="icon-box">
-                        <input type="tel" name="tel" id="telephone" autofocus>
+                        <input type="tel" name="tel" id="telephone">
                         <svg class="icon-form" width="18px" height="18px">
                             <use href="./images/symbol-defs.svg#icon-phone-black"></use>
                         </svg>  
@@ -470,20 +469,22 @@
                 <textarea class="comment" name="feedback" rows="5" id="text" placeholder="Оставьте ваш комментарий"></textarea>
               </div>
 
-
-                  <label class="agree" for="agreement">
+                <div class="box-agreement">
+                 <label class="agree" for="agreement">                   
                    
-                   
-                    <input class="checkbox" type="checkbox" name="agree" value="agree" id="agreement" checked />
-                    <span class="span-box">
+                     <input class="checkbox" type="checkbox" name="agree" value="agree" id="agreement" checked />
+                     <span class="span-box">
 
-                        <svg class="icon-checkbox" width="15px" height="15px">
-                            <use href="./images/symbol-defs.svg#icon-check"></use>
-                        </svg> 
-                      </span>
-                    Соглашаюсь с рассылкой и принимаю 
-                    <a href="./index.html" class="link-form">Условия договора</a> 
-                  </label>
+                         <svg class="icon-checkbox" width="15px" height="15px">
+                             <use href="./images/symbol-defs.svg#icon-check"></use>
+                         </svg> 
+                       </span>
+                     Соглашаюсь с рассылкой и принимаю
+
+                     <a href="./index.html" class="link-form">Условия договора</a> 
+                   </label>
+                </div>
+                 
                  
                   <button class="btn-send" type="submit">Отправить</button>
             </form>
