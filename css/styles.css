@@ -262,6 +262,8 @@ h1,h2,h3 {
     padding-bottom: 200px;
     text-align: center;
     width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
 
     background-color: var(--background-footer);
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img.background.jpg");
@@ -848,36 +850,22 @@ margin-right: 0;
         
     }
 
-    .subscribe-container {
 
+    .subscribe-field {
         width: 358px;
         height: 50px;
         border: 1px solid rgba(255, 255, 255, 0.3);
         border-radius: 4px;
         background-color: var(--background-footer);
-       padding: 15px 16px;
-
+        padding: 15px 16px;
+        color: var(--footer-contacts);
     }
 
-    .subscribe-container input {
-    background-color: var(--background-footer);
-    padding: 0;
-    margin: 0;
-    border: none;     
+    .subscribe-field:hover,
+    .subscribe-field:focus {
+    border-color: var(--button-link-color);
     }
 
-    .mail {
-    color: var(--footer-contacts);
-    }
-
-    .subscribe-container label {
-    position: relative;
-
-    color: var(--footer-contacts);
-    font-size: 16px;   
-    line-height: 1.25;
-    letter-spacing: 0.03em;   
-    }
 
     .btn-submit {
     position: relative;
@@ -1149,8 +1137,6 @@ color: var(--title-font);
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 
-
-
 }
 
 
@@ -1223,8 +1209,8 @@ margin-bottom: 12px;
 .form-field input {
     min-width: 448px;
     margin: 0;
-    margin-bottom: 10px;
-    padding: 14px 0;
+    
+    padding: 12px 15px 12px 42px;
     border: 1px solid;
     border-color: rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -1243,7 +1229,9 @@ margin-bottom: 12px;
 
 .icon-box {
     position: relative;
+    margin-bottom: 10px;
     min-width: 448px;
+
 }
 
 
@@ -1251,8 +1239,12 @@ margin-bottom: 12px;
     position: absolute;
     left: 0;
     top: 0;
-    margin-top: 14px;
-    margin-left: 15px;
+
+    margin-left: 12px;
+    margin-top: 11px;
+    margin-bottom: 11px;
+
+ 
    fill: var(--title-font);
    transition-duration: 250ms;
    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1317,8 +1309,7 @@ margin-right: 8px;
 
 
 .checkbox:checked + .span-box {
-    background-color: var(--button-link-color);
-    
+    background-color: var(--button-link-color);    
     background-size: contain; 
     background-origin: border-box;
     border-color: var(--button-link-color);
