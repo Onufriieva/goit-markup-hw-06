@@ -859,6 +859,7 @@ margin-right: 0;
         background-color: var(--background-footer);
         padding: 15px 16px;
         color: var(--footer-contacts);
+        outline: transparent;
     }
 
     .subscribe-field:hover,
@@ -1216,14 +1217,16 @@ margin-bottom: 12px;
     border-radius: 4px;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    outline: none;
+    outline: transparent;
 }
 
-  input:hover + .icon-form {
+  input:hover + .icon-form,
+  input:focus-within + .icon-form {
     fill: var(--button-link-color);
   }
 
-  input:hover {
+  input:hover,
+  input:focus-within {
       border-color: var(--button-link-color);
   }
 
@@ -1274,7 +1277,8 @@ margin-right: 8px;
     outline: none;
 }
 
-.comment:hover {
+.comment:hover,
+.comment:focus-within {
     border-color: var(--button-link-color);
 }
 
